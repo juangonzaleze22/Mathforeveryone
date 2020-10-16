@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mediaquerys.css">
+    
+    <title>Mathforeveryone</title>
+  </head>
+  <body>
+
+    <!-- ========================================= 
+    ===================== Navbar =================
+    ============================================== -->
+    <nav>
+      <div class="navbar container">
+        <div class="logo">
+          <img src="assets/img/icon-women.png" alt="" class="img-fluid">
+          <img src="assets/img/icon-men.png" alt="" class="img-fluid">
+          <span class="number">123</span>
+          <span class="letter">MATH FOR<br> EVERYONE</span>
+        </div>
+        <div class="dropdown">
+          <button class="btn buttonDropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="tablist" >
+            <a class="dropdown-item active" role="presentation" onclick="showPane('home')">Inicio</a>
+            <a class="dropdown-item" role="presentation" onclick="showPane('our')">Nosotros</a>
+            <div class="dropdown custom">
+              <a class="dropdown-item ourPrograms" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nuestros programas</a> 
+              <div class="dropdown-menu py-0" aria-labelledby="dropdownMenuButton2">
+                <a class="dropdown-item" href="#" onclick="showPane('ourPrograms')">Programas vacacionales</a>
+              </div>
+            </div>
+            <!-- <a class="dropdown-item" role="presentation" onclick="showPane('ourPrograms')">Nuestros programas</a> -->
+            <a class="dropdown-item" role="presentation" onclick="showPane('parents')">Padres</a>
+            <a class="dropdown-item" role="presentation" onclick="showPane('register')">Registro</a>
+          </div>
+        </div>
+        <div class="right text-right  ">
+          <p>“Beneficios más allá del salón de clases”</p>
+          <p>LLÁMANOS: (57) 301 428 8203</p>
+        </div>
+        <div class="d-md-block d-none w-100">
+          <ul class="nav nav-tabs tabEdit clickActive">
+            <li class="nav-item">
+              <a class="nav-link active home" onclick="showPane('home')">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link our" onclick="showPane('our')">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="nav-link ourPrograms" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nuestros programas</a> 
+                <div class="dropdown-menu py-0" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#" onclick="showPane('ourPrograms')">Programas vacacionales</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link parents" onclick="showPane('parents')">Padres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link register " onclick="showPane('register')">Registro</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+     <!-- sections -->
+     <section class="py-4">
+       <div class="container">
+        <div class="tab-content" id="myTabContent">
+        <!-- =======================================
+          ================ Section Home ============
+          ======================================= -->
+          <div class="tab-pane fade show active" id="home" >
+            <div class="banner">
+              <div class="owl-carousel owl-theme" id="slider-Home">
+                <div class="item">
+                  <img src="assets/img/banner1.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="assets/img/banner2.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="assets/img/banner3.png" alt="">
+                </div>
+              </div>
+              <div class="text">
+                <h5>Solución perfecta para <br>aprender matemáticas</h5>
+              </div>
+            </div>
+            <div class="grid-config">
+              <div class="grid not-hover d-flex justify-content-center align-items-center">
+                <h4>Programas<br> vacacionales</h4>
+              </div>
+              <div class="grid">
+                <img class="img-fluid" src="assets/img/grid_image1.png" alt="">
+              </div>
+              <div class="grid">
+                <img class="img-fluid" src="assets/img/grid_image2.png" alt="">
+              </div>
+              <div class="grid">
+                <img class="img-fluid" src="assets/img/grid_image3.png" alt="">
+              </div>
+              <div class="grid not-hover"></div>
+              <div class="grid slider not-hover">
+                <div class="owl-carousel owl-theme slider-icon">
+                  <div class="item">
+                    <img class="img-fluid" src="assets/img/slider-icon1.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img class="img-fluid" src="assets/img/slider-icon2.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img class="img-fluid" src="assets/img/slider-icon3.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="grid">
+                <img class="img-fluid" src="assets/img/grid_image4.png" alt="">
+              </div>
+              <div class="grid">
+                <img class="img-fluid" src="assets/img/grid_image5.png" alt="">
+              </div>
+              <div class="grid">
+                <img class="img-fluid" src="assets/img/grid_image6.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- =======================================
+          ================ Section Our ============
+          ======================================= -->
+          <div class="tab-pane fade section_text" id="our">
+            <div class="row mx-0">
+              <div class="col-md-5 col-lg-6 col-12 px-1 px-md-initial">
+                <h2 class="title">Nosotros</h2>
+                <p class="paragraph">
+                  En el currículum de cualquier país del mundo, las matemáticas constituyen uno de los contenidos primordiales y sin embargo, es una de las asignaturas con mayor índice de fracaso escolar. De ahí surge este maravilloso proyecto que busca ofrecer a las instituciones, alumnos y padres de familia un programa de aprendizaje de las matemáticas, con la finalidad que se interesen más en la asignatura mediante una plataforma virtual donde encuentren métodos didácticos para aprender matemáticas de una manera diferente y entretenida, inicialmente estaría dirigido para niños de los 2 a los 15 años de edad, en instituciones privadas y a personas particulares. Queremos ofrecer más que una plataforma virtual un acompañamiento en el proceso del aprendizaje, que nos permita fortalecer en los alumnos la confianza en sí mismos. 
+                </p>
+                <h2 class="title">OBJETIVOS</h2>
+                <p class="paragraph">
+                  Mejorar el proceso de enseñanza – aprendizaje de los estudiantes, a través de la implementación de un programa de educación virtual.
+                </p>
+                <p class="paragraph">
+                  Promover el uso de recursos TIC para mejorar el aprendizaje de los alumnos. 
+                </p>
+                <p class="paragraph">
+                  Analizar las variables asociadas al rendimiento en matemáticas. 
+                </p>
+                <p class="paragraph">
+                  Lograr que las matemáticas sean vistas como una necesidad y no como una obligación. 
+                </p>
+                <p class="paragraph">
+                  Proponer nuevos métodos de enseñanza donde los estudiantes en general se interesen y les guste más las matemáticas
+                </p>
+                <h2 class="title">VALOR AGREGADO</h2>
+                <p class="paragraph">
+                  El valor agregado que tiene este proyecto es que la plataforma virtual contara con tutores disponibles para hacerles acompañamiento a los alumnos en todo su proceso de aprendizaje; teniendo en cuenta que es un proyecto educativo y tecnológico, es más llamativo para los estudiantes que cada día están más cercanos a las herramientas tecnológicas que se les ofrecen. Es una manera diferente de enseñar las matemáticas.
+                </p>
+                <h2 class="title">​​Misión</h2>
+                <p class="paragraph">
+                  La misión de Math For Everyone​ es contribuir a la educación de las matemáticas a través de la modalidad virtual, derribando las barreras que impone la enseñanza tradicional, mediante acciones y procesos de enseñanza y aprendizaje y las innovaciones metodológicas y didácticas con la utilización de las TIC'S para fomentar y acompañar el aprendizaje autónomo. 
+                </p>
+                <h2 class="title">Visión</h2>
+                <p class="paragraph">
+                  123 Math For Everyone se proyecta como una empresa líder en educación matemática virtual, reconocida a nivel nacional o internacional por la calidad innovadora en sus servicios educativos.
+                </p>
+                <h2 class="title">Valores Corporativos</h2>
+                <p class="paragraph">
+                  <b>BÚSQUEDA DE LA EXCELENCIA:</b> Trabajar por la excelencia de nuestro servicio y método de enseñanza 
+                </p>
+                <p class="paragraph">
+                  <b>INNOVACIÓN:</b> Innovar constantemente la manera de enseñar 
+                </p>
+                <p class="paragraph">
+                  <b>CALIDAD:</b> Prioridad a la calidad de nuestros servicios para mejorar la formación de los alumnos. 
+                </p>
+                <p class="paragraph">
+                  <b>RESPONSABILIDAD SOCIAL:</b> Preocuparnos por el bienestar social y el desarrollo de la comunidad 
+                </p>
+                <p class="paragraph">
+                  <b>FORMACIÓN:</b> La empresa se preocupa de la formación continua en todos los ámbitos.  
+                </p>
+                <p class="paragraph">
+                  <b>COMPROMISO:</b> Comprometernos con nuestro trabajo.
+                </p>
+                <h2 class="title">Mercado Objetivo</h2>
+                <p class="paragraph">
+                  1. Nuestro primer mercado objetivo serán los colegios privados porque tienes más recursos para poner en marcha este proyecto en u institución, mejorar su calidad educativa y ofrecer una mejor enseñanza a sus alumnos. 
+                </p>
+                <p class="paragraph">
+                  2. Por otro lado están las personas particulares de estratos 3 en adelante, porque tienes los recursos para pagar a sus hijos un programa para mejorar su nivel de educación y asegurar la excelencia de sus hijos a futuro.
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-4 col-12 px-1 px-md-initial">
+                <img src="assets/img/article_image.png" alt="" class="img-fluid W-100">
+                <div class="d-flex justify-content-center align-items-center box-blue">
+                  <h4>Llámanos<br> 1-800-000-0000</h4>
+                </div>
+              </div>
+              <div class="col-md-3 col-lg-2 col-12 px-1 px-md-initial">
+                <div class="box-notice">
+                  <h3 class="">En las <br>Noticias</h3>
+                  <div class="box">
+                    <h5>Título</h5>
+                    <p>Párrafo. Haz clic aquí para agregar tu texto y editar. Permite que tus usuarios te conozcan.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span>12 de julio, 2023</span>
+                      <a href="#" class="btn"><i class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <h5>Título</h5>
+                    <p>Párrafo. Haz clic aquí para agregar tu texto y editar. Permite que tus usuarios te conozcan.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span>12 de julio, 2023</span>
+                      <a href="#" class="btn"><i class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <h5>Título</h5>
+                    <p>Párrafo. Haz clic aquí para agregar tu texto y editar. Permite que tus usuarios te conozcan.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span>12 de julio, 2023</span>
+                      <a href="#" class="btn"><i class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- =======================================
+          ================ Section OurPrograms ============
+          ======================================= -->
+          <div class="tab-pane fade section_text" id="ourPrograms">
+            <div class="row  mx-0">
+              <div class="col-md-6 col-lg-5 col-12 px-1 px-md-initial">
+                <h3>NUESTROS PROGRAMAS<br> vacacionales</h3>
+                <p class="paragraph">
+                  Para esto esperamos contar con diferentes programas y enfocados a diferentes ramas para satisfacer las diferentes necesidades de los alumnos, como por ejemplo:
+                </p>
+                <p class="paragraph">
+                  Programas especiales para adelantar a aquellos que tengan más dificultades.
+                </p>
+                <p class="paragraph">
+                  Programas dirigidos a aquellos que les gustan mucho las matemáticas y quieres hacer algún curso en especial.
+                </p>
+                <p class="paragraph">
+                  Actividades lúdicas presenciales para fortalecer las relaciones interpersonales y la confianza en si mismos
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-7 col-12 px-1 px-md-initial">
+                <img class="img-fluid w-100" src="assets/img/article_image2.png" alt="">
+                <img class="img-fluid w-100 mt-3" src="assets/img/article_image3.png" alt="">
+              </div>
+            </div>
+          </div>
+           <!-- =======================================
+          ================ Section parents ============
+          ======================================= -->
+          <div class="tab-pane fade section_text" id="parents">
+            <div class="row mx-0">
+              <div class="col-md-6 col-lg-5 col-12 px-1 px-md-initial">
+                <h3 class="mb-4">BIENVENIDO A NUESTO<br>
+                  RINCÓN DE PADRES</h3>
+                <p class="paragraph">
+                  <span class="color">Nuestra Política</span><br>
+                  Los padres son parte fundamental de este proceso es importante que ellos siempre estén enterados del desarrollo de sus hijos y que fortalezcan su confianza y autonomía.:
+                </p>
+                <img class="img-fluid img-rounded mx-auto" src="assets/img/article_image_rounded.png" alt="">
+                <div class="d-flex download">
+                  <h5>Aplicaciones al Programa 2020 </h5>
+                  <button class="btn btn-download">
+                    Descargar
+                  </button>
+                </div>
+                <p class="paragraph mt-4">
+                  <span class="color">Nuestra Política</span><br>
+                  Los padres son parte fundamental de este proceso es importante que ellos siempre estén enterados del desarrollo de sus hijos y que fortalezcan su confianza y autonomía.:
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-7 col-12 px-1 px-md-initial">
+                <img class="img-fluid w-100" src="assets/img/article_image4.png" alt="">
+                <img class="img-fluid w-100 mt-3" src="assets/img/article_image5.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- =======================================
+          ================ Section Contact ============
+          ======================================= -->
+          <div class="tab-pane fade section_text" id="register">
+            <h3 class="mb-3 px-1">CONTÁCTANOS</h3>
+            <div class="row mx-0">
+              <div class="col-md-6 col-lg-7 col-12 px-1" style="overflow-x: hidden;">
+                <div class="sparated color">/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</div>
+                <p class="paragraph color my-4">
+                    Teléfono (57) 301 428 8203<br>
+                    Dirección Calle 21 # 10-48, Bucaramanga<br>
+                    Email yessicapaola.lizarazo@ustabuca.edu.co
+                </p>
+                <div class="sparated color">/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</div>
+
+                <div class="boxContact mt-4">
+                  <p class="paragraph color mb-2">
+                    <b>¡Regístrate Ahora! ¿Tienes Preguntas o Sugerencias?</b>
+                  </p>
+                  <form action="" class="mb-3">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Nombre*">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Email*">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Asunto">
+                    </div>
+                    <div class="form-group">
+                     <textarea class="form-control" name="" id="" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-send">
+                      Enviar
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-5 col-12 px-1 px-md-initial">
+                <div style="width: 100%"><iframe width="100%" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=las%20pinitas,%20colombia+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+       </div>
+     </section>
+
+     <!-- =======================================
+     ================ Footer =======================
+     ======================================= -->
+
+     <footer class="footer">
+       <div class="container">
+          <div class="col-12 col-lg-7 mx-auto px-0 white-space-nowrap">
+            <div class="d-flex mb-5 links">
+              <span class="">Llámanos: (57) 301 4288203</span>
+              <span class="mx-3">/</span>
+              <a class="" href="mailto:yessicapaola.lizarazo@ustabuca.edu.co" target="_blank">yessicapaola.lizarazo@ustabuca.edu.co</a>
+              <span class="mx-3">/</span>
+              <span class="">calle 21 # 10-48 Kennedy</span>
+            </div>
+            <div class="w-100">
+              <ul class="nav nav-pills  clickActive" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active home" onclick="showPane('home')">Inicio</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link our" onclick="showPane('our')">Nosotros</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <div class="dropdown">
+                    <a class="nav-link ourPrograms" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nuestros programas</a> 
+                    <div class="dropdown-menu py-0" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#" onclick="showPane('ourPrograms')">Programas vacacionales</a>
+                    </div>
+                  </div>
+                  <!-- <a class="nav-link ourPrograms" onclick="showPane('ourPrograms')">Nuestros programas</a> -->
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link parents" onclick="showPane('parents')">Padres</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link register" onclick="showPane('register')">Registro</a>
+                </li>
+              </ul>
+            </div>
+            <div class="social-buttons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-google"></i>
+              </a>
+            </div>
+          </div>
+       </div>
+     </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/fontawesome/js/all.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+/* Mediaquery */
+
+@media (min-width: 992px){
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; 
+     }
+
+     .col-12.px-1{
+        padding-right: 7.5px !important;
+        padding-left: 7.5px !important;
+     }
+
+     .row.mx-0{
+        margin-right: -7.5px !important;
+        margin-left: -7.5px !important;
+     }
+}
+
+@media (min-width: 993px) and (max-width: 1200px){
+
+}
+
+@media (min-width: 767px) and (max-width: 992px){
+    /* navbar */
+
+    nav .logo,
+    nav .right{
+        zoom: .6;
+    }
+    /* section */
+    .tabEdit li a{
+        font-size: .6em;
+        white-space: nowrap;
+    }
+
+    .grid-config .grid:nth-child(1) h4{
+        font-size: 22px;;
+    }
+
+    .section_text .box-notice,
+    .section_text .box-blue{
+        zoom: .8;
+    }
+    .section_text h3{
+        font-size: 34px;
+    }
+    .section_text .download h5{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px){
+/* navbar */
+
+    nav .logo{
+        zoom: .6;
+    }
+
+    nav .buttonDropdown{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(249, 173, 59, 1);
+        color: #fff;
+        border-radius: 5px;
+        font-size: 28px;
+        border: 1px solid #fff;
+        line-height: 1;
+    }
+
+    nav .buttonDropdown:hover,
+    nav .buttonDropdown:active, 
+    nav .buttonDropdown:focus {
+        color: #fff;
+    }
+    nav .buttonDropdown::after{
+        display: none;
+    }
+
+    nav .dropdown{
+        position: initial;
+    }
+   
+    nav .dropdown-menu{
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        border-radius: 0;
+        border: 1px solid #fff;
+    }
+    nav .custom{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+    nav .custom .dropdown-menu{
+        position: relative;
+        width: 100%;
+        top: 0;
+        border: none;
+    }
+
+    nav .dropdown-menu .dropdown-item{
+        padding: 8px 17px;
+        float: left;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        background-color: rgba(249, 173, 59, 1);
+        color: #fff;
+        border-bottom :1px solid #fff;
+        min-height: 48px;;
+    }
+
+    nav .dropdown-menu .dropdown-item:last-child{
+        border-bottom: none;
+    }
+
+    nav .dropdown-menu .dropdown-item.active{
+        background-color: rgba(55, 189, 191, 1);
+    }
+
+    nav .right{
+        zoom: .6;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    /* section Home */
+    /* section Home */
+
+    .banner .text{
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .grid-config{
+        grid-gap: 0;
+        display: flex;
+        margin: 5px -5px;
+        flex-wrap: wrap;
+    }
+    .grid-config .grid:nth-child(1){
+        width: calc(100% - 10px);
+        margin: 10px auto;
+    }
+    .grid-config .grid{
+        width: calc(50% - 10px);
+        margin: 5px auto;
+    }
+    .grid.not-hover:empty{
+        display: none;
+    }
+    .grid-config .grid:nth-child(1) h4{
+        font-size: 2em;
+    }
+
+    .section_text .box-blue{
+        margin: 15px auto;
+    }
+
+    .section_text .download h5{
+        font-size: 12px;
+    }
+    /* footer */
+
+    .links{
+        flex-direction: column;
+    }
+
+    .links .mx-3{
+        display: none;
+        margin-bottom: 20px !important
+    }
+    .section_text h3{
+        font-size: 34px;
+    }
+
+
+
+}
+@media (min-width: 570px) and (max-width: 766px){
+    .grid-config .grid:nth-child(1){
+        width: calc(66.6% - 10px);
+        margin: 5px;
+    }
+    /* home */
+    .grid-config .grid{
+        width: calc(33.3% - 10px);
+    }
+
+}
+
+@media (max-width: 570px){
+    section > .container {
+        padding: 0 10px;
+    }
+   
+
+    /* footer */
+
+    .footer .nav{
+        justify-content: center;
+        flex-direction: column;
+        padding: 15px 0
+    }
+    footer .nav .nav-link{
+        padding-left: 0;
+    }
+
+}
